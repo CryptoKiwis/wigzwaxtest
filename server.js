@@ -41,7 +41,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // Routes & controllers
-app.get("/", (req, res) => res.json({ msg: "Welcome to minted api" }));
+app.get("/", (req, res) => res.json({ msg: "Welcome to WigzWaxTest api" }));
 app.use("/api", require("./src/routes/nft"));
 app.use("/admin", require("./src/routes/admin"));
 app.use("/api/attribute", require("./src/routes/attributes"));
